@@ -5,5 +5,86 @@
 }
 
 body {
-    background-color: white;
+    /*background-color: wihte;*/
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 56px 560px 604px 239px 524px 674px 340px 425px;
+}
+
+nav {
+    /*height: 56px;*/
+    background-color: lightcyan;
+}
+
+nav img {
+    height: 100%;
+}
+
+.image-section img {
+    background-color:pink;
+    position: absolute;
+    width: 100%;
+}
+
+.centertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centertext h1 {
+    color: #F7B180;
+}
+
+a {
+    color: #18471B;
+}
+.featured-section, .contact-sections {
+    background-color: #F7B180;
+}
+
+.awards-sections {
+    display: flex;
+    justify-content: space-around;
+}
+
+.awards-sections img {
+    height: 80%;
+}
+
+.featured-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.featured-section img{
+    height: 70%;
+}
+
+
+.trips-section {
+    background-color: lightgrey;
+}
+
+.cardsgroup {
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+
+}
+
+.adventure-card {
+    border: solid 2px black;
+    height: 360px;
+    width: 229px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 80px;
 }
