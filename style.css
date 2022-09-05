@@ -10,7 +10,8 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 56px 560px 604px 239px 524px 674px 340px 425px;
+    grid-template-rows: 56px 800px 504px 239px 524px 674px 340px 425px;
+    /*grid-template-columns: repeat(2, 1fr);*/
 }
 
 .header {
@@ -43,8 +44,9 @@ nav a{
 }
 
 .image-section img {
-    background-color:pink;
     position: absolute;
+    object-fit: cover;
+    height: 100%;
     width: 100%;
 }
 
@@ -52,7 +54,7 @@ nav a{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
 }
 
 .centertext h1 {
@@ -68,8 +70,11 @@ a {
 }
 
 .awards-sections {
+    background-color: lightslategray;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .awards-sections img {
