@@ -10,7 +10,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 56px 800px 504px 239px 524px 674px 340px 425px;
+    grid-template-rows: 56px 800px 280px 239px 524px 674px 340px 425px;
     /*grid-template-columns: repeat(2, 1fr);*/
 }
 
@@ -44,7 +44,6 @@ nav a{
 }
 
 .image-section img {
-    position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -65,6 +64,16 @@ a {
     color: #18471B;
     text-decoration: none;
 }
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 16px 32px;
+}
+
+
 .featured-section, .contact-sections {
     background-color: #F7B180;
 }
