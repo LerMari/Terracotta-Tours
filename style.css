@@ -13,13 +13,33 @@ body {
     grid-template-rows: 56px 560px 604px 239px 524px 674px 340px 425px;
 }
 
-nav {
-    /*height: 56px;*/
+.header {
     background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 2px black;
 }
 
-nav img {
-    height: 100%;
+.logosection {
+    border: solid 2px blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+#logo {
+    height: 56px;;
+}
+
+nav {
+    background-color: pink;
+}
+
+nav a{
+    padding: 0 24px;
+    border: solid 2px yellow;
 }
 
 .image-section img {
@@ -41,6 +61,7 @@ nav img {
 
 a {
     color: #18471B;
+    text-decoration: none;
 }
 .featured-section, .contact-sections {
     background-color: #F7B180;
@@ -88,3 +109,31 @@ a {
     justify-content: space-between;
     padding-bottom: 80px;
 }
+
+#menuchk {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .burger {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+
+   #menuchk:checked + nav {
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        align-items: flex-end;
+        position: absolute;
+        top: 56px;
+        left: 0;
+    }
+}
+
