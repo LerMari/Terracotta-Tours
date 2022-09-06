@@ -175,11 +175,34 @@ a {
     display: none;
 }
 .contact-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
     background-color: #F7B180;
 }
 .contact-section h3 {
     color: var(--fourth-color);
     font-family: 'Sacramento', cursive;
+    font-size: 5.0rem;
+    font-weight: 100;
+}
+.contact-section a:nth-child(2) {
+    background-color: var(--third-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+.contact-section a:nth-child(3) {
+    background-color: var(--primary-color);
+    border: 1px solid var(--third-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
 }
 @media (max-width: 425px) {
     .burger {
