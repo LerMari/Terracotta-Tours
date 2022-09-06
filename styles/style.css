@@ -38,7 +38,6 @@ body {
 #logo {
     height: 56px;;
 }
-
 nav a:nth-child(3) {
     padding: 10px;
     border: 1px solid var(--third-color);
@@ -55,34 +54,49 @@ nav a:nth-child(4) {
     height: 100%;
     width: 100%;
 }
-
 .centertext {
   position: absolute;
   top: 50%;
   left: 50%;
  transform: translate(-50%, -50%);
 }
-
 .centertext h1 {
     color: var(--secondary-color);
     font-family: 'Sacramento', cursive;
-
+    font-size: 3.0rem;
+    font-weight: 100;
 }
-
 a {
     color: var(--third-color);
     text-decoration: none;
 }
-
-
 .about-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 16px 32px;
 }
+.about-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.about-section h5, p {
+    font-family: 'Montserrat', sans-serif;
+}
+.about-section p:first-child {
+    font-weight: 700;
+}
+.about-section a {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid var(--third-color);
+    padding: 5px;
+    border-radius: 5px;;
+}
+.featured-section h3, p {
+    font-family: 'Montserrat', sans-serif;
 
-
+}
 .featured-section, .contact-sections {
     background-color: var(--secondary-color);
 }
@@ -111,11 +125,13 @@ a {
 
 
 .trips-section {
+    font-family: 'Montserrat', sans-serif;
+
     background-color: lightgrey;
 }
 
 .cardsgroup {
-    background-color: pink;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -124,13 +140,16 @@ a {
 }
 
 .adventure-card {
-    border: solid 2px var(--fourth-color);
+    border: solid 1px var(--fourth-color);
     height: 360px;
     width: 229px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 80px;
+}
+.adventure-card h5, p {
+    padding: 20px;
 }
 
 #menuchk {
@@ -140,7 +159,13 @@ a {
 .burger {
     display: none;
 }
-
+.contact-section {
+    background-color: #F7B180;
+}
+.contact-section h3 {
+    color: var(--fourth-color);
+    font-family: 'Sacramento', cursive;
+}
 @media (max-width: 425px) {
     .burger {
         display: block;
