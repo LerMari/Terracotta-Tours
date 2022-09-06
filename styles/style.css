@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #F7B180;
+    --third-color: #18471B;
+    --fourth-color: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-    /*background-color: wihte;*/
+    /*background-color: white;*/
 }
 
 .grid-container {
@@ -15,15 +22,13 @@ body {
 }
 
 .header {
-    background-color: lightcyan;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: solid 2px black;
 }
 
-.logosection {
-    border: solid 2px blue;
+.logo-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,15 +39,17 @@ body {
     height: 56px;;
 }
 
-nav {
-    background-color: pink;
+nav a:nth-child(3) {
+    padding: 10px;
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
 }
-
-nav a{
-    padding: 0 24px;
-    border: solid 2px yellow;
+nav a:nth-child(4) {
+    color: white;
+    background-color: var(--third-color);
+    padding: 10px;
+    border-radius: 10px;;
 }
-
 .image-section img {
     object-fit: cover;
     height: 100%;
@@ -57,11 +64,13 @@ nav a{
 }
 
 .centertext h1 {
-    color: #F7B180;
+    color: var(--secondary-color);
+    font-family: 'Sacramento', cursive;
+
 }
 
 a {
-    color: #18471B;
+    color: var(--third-color);
     text-decoration: none;
 }
 
@@ -75,7 +84,7 @@ a {
 
 
 .featured-section, .contact-sections {
-    background-color: #F7B180;
+    background-color: var(--secondary-color);
 }
 
 .awards-sections {
@@ -115,7 +124,7 @@ a {
 }
 
 .adventure-card {
-    border: solid 2px black;
+    border: solid 2px var(--fourth-color);
     height: 360px;
     width: 229px;
     display: flex;
