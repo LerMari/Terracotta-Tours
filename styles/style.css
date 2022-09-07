@@ -4,30 +4,22 @@
     --third-color: #18471B;
     --fourth-color: #000000;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    /*background-color: white;*/
-}
-
 .grid-container {
     display: grid;
-    grid-template-rows: 56px 800px 280px 239px 524px 674px 340px 425px;
+    grid-template-rows: 56px 800px 350px 239px 524px 580px 340px 425px;
     /*grid-template-columns: repeat(2, 1fr);*/
 }
-
 .header {
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 .logo-section {
     display: flex;
     align-items: center;
@@ -41,7 +33,6 @@ body {
 #logo {
     height: 56px;;
 }
-
 nav a {
     padding: 0 10px;
 }
@@ -100,7 +91,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 16px 32px;
+    margin: 26px 56px;
 }
 .about-section h3 {
     font-family: 'Montserrat', sans-serif;
@@ -117,64 +108,76 @@ a {
     font-family: 'Montserrat', sans-serif;
     border: 1px solid var(--third-color);
     padding: 5px;
-    border-radius: 5px;;
+    border-radius: 5px;
+    width: 170px;
+    text-align: center;
 }
-.featured-section h3, p {
-    font-family: 'Montserrat', sans-serif;
-
-}
-.featured-section, .contact-sections {
-    background-color: var(--secondary-color);
-}
-
 .awards-sections {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 .awards-sections img {
     height: 80%;
 } 
 
+#featured-text {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    width: 40%;
+}
+#featured-text p {
+    padding-top: 20px;
+}
+.featured-section, .contact-section {
+    background-color: var(--secondary-color);
+}
 .featured-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-
 .featured-section img{
-    height: 70%;
+    height: 60%;
 }
-
-
 .trips-section {
     font-family: 'Montserrat', sans-serif;
-
-    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 26px 56px;
 }
 
 .cardsgroup {
-    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 60%;
-
+    height: 70%;
 }
 
 .adventure-card {
     border: solid 1px var(--fourth-color);
     height: 360px;
-    width: 229px;
+    width: 279px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
+    margin: 15px;
 }
-.adventure-card h5, p {
-    padding: 20px;
+
+.adventure-card img {
+    object-fit: cover;
+    height: 180px;
+}
+.adventure-card h5{
+    margin: 24px 10px;
+}
+.adventure-card p{
+    margin: 10px;
 }
 
 #menuchk {
