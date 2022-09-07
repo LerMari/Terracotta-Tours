@@ -34,7 +34,10 @@ body {
     justify-content: space-between;
     width: 250px;
 }
-
+.logo-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
 #logo {
     height: 56px;;
 }
@@ -54,11 +57,22 @@ nav a:nth-child(4) {
     height: 100%;
     width: 100%;
 }
+.image-section a {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
 .centertext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
- transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .centertext h1 {
     color: var(--secondary-color);
@@ -69,6 +83,7 @@ nav a:nth-child(4) {
 a {
     color: var(--third-color);
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 .about-section {
     display: flex;
@@ -160,11 +175,35 @@ a {
     display: none;
 }
 .contact-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
     background-color: #F7B180;
 }
 .contact-section h3 {
     color: var(--fourth-color);
     font-family: 'Sacramento', cursive;
+    font-size: 5.0rem;
+    font-weight: 100;
+}
+.contact-section a:nth-child(2) {
+    background-color: var(--third-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+.contact-section a:nth-child(3) {
+    background-color: var(--primary-color);
+    border: 1px solid var(--third-color);
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+}
+footer {
+    display: flex;
+    color: var(--fourth-color);
+    justify-content: center;
 }
 @media (max-width: 425px) {
     .burger {
