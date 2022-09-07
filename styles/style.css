@@ -41,7 +41,12 @@ body {
 #logo {
     height: 56px;;
 }
+
+nav a {
+    padding: 0 10px;
+}
 nav a:nth-child(3) {
+    margin: 10px;
     padding: 10px;
     border: 1px solid var(--third-color);
     border-radius: 10px;
@@ -50,12 +55,29 @@ nav a:nth-child(4) {
     color: white;
     background-color: var(--third-color);
     padding: 10px;
-    border-radius: 10px;;
+    border-radius: 10px;
+    white-space: nowrap;
 }
 .image-section img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+.centertext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+.centertext h1 {
+    color: var(--secondary-color);
+    font-family: 'Sacramento', cursive;
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: center;
 }
 .image-section a {
     display: flex;
@@ -67,18 +89,7 @@ nav a:nth-child(4) {
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 100;
-}
-.centertext {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.centertext h1 {
-    color: var(--secondary-color);
-    font-family: 'Sacramento', cursive;
-    font-size: 3.0rem;
-    font-weight: 100;
+    width: 220px;
 }
 a {
     color: var(--third-color);
@@ -117,7 +128,6 @@ a {
 }
 
 .awards-sections {
-    background-color: lightslategray;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
