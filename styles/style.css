@@ -11,8 +11,7 @@
 }
 .grid-container {
     display: grid;
-    grid-template-rows: 56px 800px 350px 239px 524px 580px 340px 425px;
-    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-rows: auto 800px 300px auto 524px auto 300px 100px;
 }
 .header {
     background-color: white;
@@ -37,10 +36,11 @@ nav a {
     padding: 0 10px;
 }
 nav a:nth-child(3) {
-    margin: 10px;
+    /*margin: 20px;*/
     padding: 10px;
     border: 1px solid var(--third-color);
     border-radius: 10px;
+    white-space: nowrap;
 }
 nav a:nth-child(4) {
     color: white;
@@ -49,19 +49,19 @@ nav a:nth-child(4) {
     border-radius: 10px;
     white-space: nowrap;
 }
-.image-section img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+
+.image-section {
+    background-image: url("/Terracotta-Tours/assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .centertext {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -40%);
 }
 .centertext h1 {
     color: var(--secondary-color);
@@ -119,7 +119,7 @@ a {
     flex-wrap: wrap;
 }
 .awards-sections img {
-    height: 80%;
+    height: 30%;
 } 
 
 #featured-text {
@@ -144,10 +144,8 @@ a {
 }
 .trips-section {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 26px 56px;
+    margin: 32px 56px;
+    padding: 24px;
 }
 
 .cardsgroup {
@@ -155,7 +153,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 70%;
+    height: 90%;
+    margin: 24px;
 }
 
 .adventure-card {
@@ -166,7 +165,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 70px;
-    margin: 15px;
+    margin: 20px;
 }
 
 .adventure-card img {
@@ -218,7 +217,7 @@ footer {
     color: var(--fourth-color);
     justify-content: center;
 }
-@media (max-width: 425px) {
+@media (max-width: 739px) {
     .burger {
         display: block;
     }
@@ -229,7 +228,7 @@ footer {
    #menuchk:checked + nav {
         display: flex;
         flex-direction: column;
-        width: 200%;
+        /*width: 100%;*/
         align-items: flex-end;
         position: absolute;
         top: 56px;
