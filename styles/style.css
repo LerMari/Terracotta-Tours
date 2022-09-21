@@ -218,7 +218,7 @@ footer {
     color: var(--fourth-color);
     justify-content: center;
 }
-@media (max-width: 739px) {
+@media (max-width: 800px) and (min-width: 400px) {
     .burger {
         display: block;
     }
@@ -236,8 +236,6 @@ footer {
         top: 55px;
         left: 0;
     }
-
-    
     .contact-section {
         flex-direction: column;
     }
