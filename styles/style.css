@@ -16,6 +16,7 @@
 .header {
     background-color: white;
     display: flex;
+    flex: 1 0 auto;
     align-items: center;
     justify-content: space-around;
 }
@@ -62,6 +63,7 @@ nav a:nth-child(4) {
 .centertext {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 .centertext h1 {
@@ -218,7 +220,11 @@ footer {
     color: var(--fourth-color);
     justify-content: center;
 }
-@media (max-width: 800px) and (min-width: 400px) {
+@media (max-width: 425px) {
+
+    body {
+        background-color: lightskyblue;
+    }
     .burger {
         display: block;
     }
@@ -236,8 +242,20 @@ footer {
         top: 55px;
         left: 0;
     }
+    .awards-sections {
+        flex-direction: column;
+    }
+    .trips-section {
+        flex-direction: column;
+    }
     .contact-section {
         flex-direction: column;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 960px) {
+    body {
+        background-color: pink;
     }
 }
 
