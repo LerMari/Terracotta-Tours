@@ -225,6 +225,10 @@ footer {
     body {
         background-color: lightskyblue;
     }
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto 800px auto auto 524px auto 300px 80px;
+    }
     .burger {
         display: block;
     }
@@ -246,6 +250,9 @@ footer {
         flex-direction: column;
     }
     .trips-section {
+        flex-direction: column;
+    }
+    .cardsgroup {
         flex-direction: column;
     }
     .contact-section {
