@@ -249,6 +249,9 @@ footer {
     .trips-section {
         flex-direction: column;
     }
+    .cardsgroup {
+        flex-direction: column;
+    }
     .contact-section {
         flex-direction: column;
     }
